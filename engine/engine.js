@@ -1,4 +1,5 @@
 let missionData;
+let currentMission;
 
 fetch("../json/mission.json")
 .then(response => response.json())
@@ -6,11 +7,13 @@ fetch("../json/mission.json")
 
     missionData = data;
 
-    document.getElementById("missionTitle").innerText = data.title;
-    document.getElementById("missionDesc").innerText = data.description;
+    // Load first mission
+    currentMission = missionData.missions[0];
 
-    // Show array from JSON
-    let array = data.test_cases[0].input;
+    document.getElementById("missionTitle").innerText = currentMission.title;
+    document.getElementById("missionDesc").innerText = currentMission.description;
+
+    let array = currentMission.test_cases[0].input;
     document.getElementById("array").innerText = "Array: " + array.join(", ");
 
 });
@@ -31,16 +34,16 @@ let timer = setInterval(() => {
 },1000);
 
 
-// Submit function
+// Submit Answer
 function submitAnswer(){
 
     let answer = document.getElementById("answer").value;
 
-    let correctAnswer = missionData.test_cases[0].output;
+    let correctAnswer = currentMission.test_cases[0].output;
 
     if(answer == correctAnswer){
 
-        alert("Correct! Score: " + missionData.points);
+        alert("Correct! Score: " + currentMission.points);
 
     }else{
 

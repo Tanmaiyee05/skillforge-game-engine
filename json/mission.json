@@ -1,12 +1,26 @@
 {
-  "mission_id": "ARRAY001",
-  "title": "Find Maximum Number",
-  "description": "Find the largest number in the array",
-  "difficulty": "easy",
-  "time_limit": 30,
-  "points": 100,
-  "test_cases": [
-    { "input": [3,7,2,9], "output": 9 },
-    { "input": [5,1,8,4], "output": 8 }
+  "missions": [
+    {
+      "mission_id": "ARRAY001",
+      "title": "Find Maximum Number",
+      "description": "Find the largest number in the array",
+      "difficulty": "easy",
+      "time_limit": 30,
+      "points": 100,
+      "test_cases": [
+        { "input": [3,7,2,9], "output": 9 }
+      ]
+    },
+    {
+      "mission_id": "ARRAY002",
+      "title": "Find Minimum Number",
+      "description": "Find the smallest number in the array",
+      "difficulty": "easy",
+      "time_limit": 30,
+      "points": 100,
+      "test_cases": [
+        { "input": [5,2,8,1], "output": 1 }
+      ]
+    }
   ]
 }

@@ -3,9 +3,60 @@
 
 <head>
 <title>SkillForge Mission</title>
+
+<style>
+
+body{
+    font-family: Arial;
+    background:#f4f6f8;
+}
+
+.container{
+    width:600px;
+    margin:auto;
+    margin-top:80px;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.1);
+}
+
+h1{
+    text-align:center;
+}
+
+.timer{
+    color:red;
+    font-weight:bold;
+}
+
+textarea{
+    width:100%;
+    padding:10px;
+    font-size:16px;
+}
+
+button{
+    padding:10px 20px;
+    font-size:16px;
+    background:#4CAF50;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#45a049;
+}
+
+</style>
+
 </head>
 
 <body>
+
+<div class="container">
 
 <h1 id="missionTitle"></h1>
 
@@ -13,13 +64,15 @@
 
 <p id="array"></p>
 
-<p>Time Remaining: <span id="timer">30</span> seconds</p>
+<p class="timer">Time Remaining: <span id="timer">30</span> seconds</p>
 
-<textarea id="answer" rows="6" cols="50" placeholder="Write your solution here"></textarea>
+<textarea id="answer" rows="5" placeholder="Enter your solution"></textarea>
 
 <br><br>
 
-<button onclick="submitAnswer()">Submit</button>
+<button onclick="submitAnswer()">Submit Answer</button>
+
+</div>
 
 <script src="../engine/engine.js"></script>
 
