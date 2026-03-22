@@ -1,0 +1,100 @@
+{
+  "missions": [
+    {
+      "title": "Find Maximum Number",
+      "description": "Find the largest number in the array",
+      "difficulty": "Easy",
+      "time_limit": 30,
+      "points": 100,
+      "test_cases": [{ "input": [3,7,2,9], "output": 9 }]
+    },
+    {
+      "title": "Find Minimum Number",
+      "description": "Find the smallest number in the array",
+      "difficulty": "Easy",
+      "time_limit": 30,
+      "points": 100,
+      "test_cases": [{ "input": [5,2,8,1], "output": 1 }]
+    },
+    {
+      "title": "Find Sum",
+      "description": "Find sum of all elements",
+      "difficulty": "Easy",
+      "time_limit": 30,
+      "points": 120,
+      "test_cases": [{ "input": [1,2,3,4], "output": 10 }]
+    },
+    {
+      "title": "Find Average",
+      "description": "Find average of numbers",
+      "difficulty": "Easy",
+      "time_limit": 30,
+      "points": 120,
+      "test_cases": [{ "input": [2,4,6,8], "output": 5 }]
+    },
+    {
+      "title": "Count Even Numbers",
+      "description": "Count even numbers",
+      "difficulty": "Medium",
+      "time_limit": 30,
+      "points": 150,
+      "test_cases": [{ "input": [1,2,3,4,6], "output": 3 }]
+    },
+    {
+      "title": "Count Odd Numbers",
+      "description": "Count odd numbers",
+      "difficulty": "Medium",
+      "time_limit": 30,
+      "points": 150,
+      "test_cases": [{ "input": [1,2,3,4,5], "output": 3 }]
+    },
+    {
+      "title": "Find Second Largest",
+      "description": "Find second largest number",
+      "difficulty": "Medium",
+      "time_limit": 30,
+      "points": 180,
+      "test_cases": [{ "input": [10,5,8,20], "output": 10 }]
+    },
+    {
+      "title": "Find Second Smallest",
+      "description": "Find second smallest number",
+      "difficulty": "Medium",
+      "time_limit": 30,
+      "points": 180,
+      "test_cases": [{ "input": [7,3,9,1], "output": 3 }]
+    },
+    {
+      "title": "Check Sorted Array",
+      "description": "Return 1 if sorted else 0",
+      "difficulty": "Hard",
+      "time_limit": 30,
+      "points": 200,
+      "test_cases": [{ "input": [1,2,3,4], "output": 1 }]
+    },
+    {
+      "title": "Reverse First Element",
+      "description": "Return last element of array",
+      "difficulty": "Hard",
+      "time_limit": 30,
+      "points": 200,
+      "test_cases": [{ "input": [5,2,8,1], "output": 1 }]
+    },
+    {
+      "title": "Find Range",
+      "description": "Max - Min",
+      "difficulty": "Hard",
+      "time_limit": 30,
+      "points": 220,
+      "test_cases": [{ "input": [2,8,4,10], "output": 8 }]
+    },
+    {
+      "title": "Count Greater Than 5",
+      "description": "Count numbers greater than 5",
+      "difficulty": "Hard",
+      "time_limit": 30,
+      "points": 220,
+      "test_cases": [{ "input": [2,6,7,3,9], "output": 3 }]
+    }
+  ]
+}
