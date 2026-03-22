@@ -2,52 +2,74 @@
 <html>
 
 <head>
-<title>SkillForge Mission</title>
+<title>SkillForge Game</title>
 
 <style>
 
-body{
-    font-family: Arial;
-    background:#f4f6f8;
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #2c2c54);
+    color: white;
 }
 
-.container{
-    width:600px;
-    margin:auto;
-    margin-top:80px;
-    background:white;
-    padding:30px;
-    border-radius:10px;
-    box-shadow:0px 0px 10px rgba(0,0,0,0.1);
+.container {
+    width: 600px;
+    margin: auto;
+    margin-top: 80px;
+    background: rgba(255,255,255,0.05);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
 }
 
-h1{
-    text-align:center;
+h1 {
+    text-align: center;
+    color: #00ffcc;
 }
 
-.timer{
-    color:red;
-    font-weight:bold;
+select, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background: #2e2e4d;
+    color: white;
+    border: none;
+    border-radius: 8px;
 }
 
-textarea{
-    width:100%;
-    padding:10px;
-    font-size:16px;
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #00ffcc;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-button{
-    padding:10px 20px;
-    font-size:16px;
-    background:#4CAF50;
-    color:white;
-    border:none;
-    border-radius:5px;
-    cursor:pointer;
+button:hover {
+    background: #00ccaa;
 }
 
-button:hover{
-    background:#45a049;
+.timer {
+    color: #ff4d4d;
+    font-weight: bold;
+}
+
+#result {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#score {
+    font-size: 18px;
+    color: #00ffcc;
+}
+
+#difficulty {
+    color: #ffd166;
+    font-weight: bold;
 }
 
 </style>
@@ -58,7 +80,15 @@ button:hover{
 
 <div class="container">
 
-<h1 id="missionTitle"></h1>
+<h1>SkillForge</h1>
+
+<!-- Mission selector -->
+<select id="missionSelect"></select>
+
+<h2 id="missionTitle"></h2>
+
+<!-- 🔥 Difficulty -->
+<p id="difficulty"></p>
 
 <p id="missionDesc"></p>
 
@@ -66,11 +96,15 @@ button:hover{
 
 <p class="timer">Time Remaining: <span id="timer">30</span> seconds</p>
 
-<textarea id="answer" rows="5" placeholder="Enter your solution"></textarea>
+<textarea id="answer" rows="5" placeholder="Enter the output of the problem"></textarea>
 
 <br><br>
 
 <button onclick="submitAnswer()">Submit Answer</button>
+
+<!-- Output -->
+<p id="result"></p>
+<p id="score">Score: 0</p>
 
 </div>
 
