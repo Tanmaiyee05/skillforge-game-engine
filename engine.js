@@ -4,7 +4,7 @@ let score = 0;
 let timer;
 let timeLeft = 30;
 
-fetch("../json/mission.json")
+fetch("mission.json")
 .then(res => res.json())
 .then(data => {
 
